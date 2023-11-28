@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerador de Senha</title>
+    <link rel="stylesheet" href="style.css">
+    
+</head>
+<body>
+
+    <div id="container">
+        <h1>Gerador de Senha</h1>
+
+        <div id="divSenha">
+            <input id="ttbSenha" type="text" disabled><button id="btnCopiar">Copiar</button><br><br>
+        </div>
+
+        <form>
+            <div id="labels">
+                <label>Tamanho da Senha</label>
+                <label>Incluir letras maiúsculas</label>
+                <label>Incluir letras minúsculas</label>
+                <label>Incluir números</label>
+                <label>Incluir símbolos</label>
+            </div>
+
+            <div id="inputs">
+                <input id="ttbTamanhoSenha" type="number" value="10" max=20>
+                <input id="checkMaiusculas" type="checkbox">
+                <input id="checkMinusculas" type="checkbox">
+                <input id="checkNumeros" type="checkbox">
+                <input id="checkSimbolos" type="checkbox">
+            </div>
+
+        </form>
+        <br>
+        <div id="divBtnGerarSenha">
+            <button id="btnGerarSenha">Gerar Senha</button>
+        </div>
+        
+
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
